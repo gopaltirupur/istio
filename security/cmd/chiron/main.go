@@ -55,7 +55,7 @@ var (
 		Args:  cobra.ExactArgs(0),
 		Run: func(cmd *cobra.Command, args []string) {
 			if !opts.enableController {
-				log.Info("Istio Certificate Controller is not enabled, exit")
+				log.Info("Istio Certificate  Controller is not enabled, exit")
 				return
 			}
 			runWebhookController()

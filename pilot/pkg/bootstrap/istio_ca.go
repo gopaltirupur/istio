@@ -363,6 +363,7 @@ func (j jwtAuthenticator) AuthenticatorType() string {
 }
 
 func (s *Server) createCA(client corev1.CoreV1Interface, opts *CAOptions) (*ca.IstioCA, error) {
+	log.Info("****************** createCA *****************")
 	var caOpts *ca.IstioCAOptions
 	var err error
 
